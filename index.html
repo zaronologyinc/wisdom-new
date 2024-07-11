@@ -1,0 +1,2821 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wisdom New</title>
+    <meta
+      property="og:url"
+      name="url"
+      content="https://trywisdomnutrition.com/wisdom-new"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta charset="utf-8" />
+
+    <script>
+      window.__app = {
+        visit_id: undefined,
+        query: Object.freeze(
+          window.location.search
+            .substr(1)
+            .split(/&+/)
+            .reduce(function (map, c) {
+              var a = c.match(/([^=]+)=(.*)/) || [];
+              if (a[1]) {
+                map[a[1]] = a[2];
+              }
+              return map;
+            }, {}),
+        ),
+        cookies: Object.freeze(
+          document.cookie.split(/;\s+/).reduce(function (map, c) {
+            var a = c.match(/([^=]+)=(.*)/) || [];
+            if (a[1]) {
+              map[a[1]] = a[2];
+            }
+            return map;
+          }, {}),
+        ),
+      };
+    </script>
+
+    <script defer async>
+      (function (script) {
+        script.src =
+          '//' +
+          location.hostname +
+          '/api/visits?page_id=288&page_version=&request_id=AC46AE40%3AC59A_C0A85015%3A01BB_668BF3B6_BD11C%3A1C619E' +
+          '&querystring=' +
+          encodeURIComponent(window.location.search.substr(1)) +
+          '&fbclid=' +
+          encodeURIComponent(__app.query.fbclid || '') +
+          '&fbp=' +
+          encodeURIComponent(__app.cookies._fbp || '') +
+          '&fbc=' +
+          encodeURIComponent(__app.cookies._fbc || '') +
+          '&referrer=' +
+          encodeURIComponent(document.referrer);
+        document.head.appendChild(script);
+      })(document.createElement('script'));
+    </script>
+
+    <script>
+      function recordEmailConversion(email) {
+        return new Promise(function (resolve, reject) {
+          const url =
+            '//' +
+            location.hostname +
+            '/api/conversions/email-collected' +
+            location.search;
+
+          const xhr = new XMLHttpRequest();
+
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState !== XMLHttpRequest.DONE) {
+              return;
+            }
+
+            if (Math.floor(xhr.status / 100) !== 2) {
+              return reject(xhr.responseText || 'Network Error');
+            }
+
+            try {
+              var response = JSON.parse(xhr.responseText);
+            } catch (error) {
+              return reject(
+                'Failed parsing server response: ' + error.toString(),
+              );
+            }
+
+            resolve(response);
+          };
+
+          xhr.onerror = reject;
+
+          xhr.open('POST', url);
+          xhr.setRequestHeader(
+            'Content-Type',
+            'application/json; charset=UTF-8',
+          );
+
+          xhr.send(
+            JSON.stringify({
+              email,
+              page_id: 288,
+              page_version: '' || undefined,
+              referrer: document.referrer,
+              request_id:
+                'AC46AE40:C59A_C0A85015:01BB_668BF3B6_BD11C:1C619E' ||
+                undefined,
+            }),
+          );
+        });
+      }
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script defer async>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NTC5SPRF');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+      var _kmq = _kmq || [];
+      var _kmk = _kmk || '12859ced69b5c659e41f0dd45df550b8ceb697e9';
+      function _kms(u) {
+        setTimeout(function () {
+          var d = document,
+            f = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = u;
+          f.parentNode.insertBefore(s, f);
+        }, 1);
+      }
+      _kms('//i.kissmetrics.io/i.js');
+      _kms('//scripts.kissmetrics.io/' + _kmk + '.2.js');
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NTC5SPRF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <section
+      id="hero"
+      class="py-5"
+      style="
+        background-image: url('https://trywisdomnutrition.com/assets/images/background.png');
+        background-size: cover;
+        color: #674f38;
+      "
+    >
+      <div class="container text-center" style="min-height: 75vh">
+        <div>
+          <h4 class="">
+            Mankind was designed for vitality, longevity, and clarity. The Bible
+            has said this for thousands of years.
+          </h4>
+          <h1 class="my-4" style="font-size: 2rem; font-weight: 800">
+            Wisdom Formula:<br />The Spirit of Wellness
+          </h1>
+          <h3 class="fw-semibold">
+            A Revolutionary Fusion of Biblical Healing Herbs and Modern Science
+            to Restore and Uplift the Whole Human: Body, Mind, and Spirit
+          </h3>
+          <img
+            src="https://trywisdomnutrition.com/assets/images/products.png"
+            alt="Products"
+            class="img-fluid mb-4"
+          />
+          <h2 class="mb-0 fs-1">"I Feel Like Myself Again!"</h2>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="pt-5 pb-3"
+      style="background-color: #fcfcf9; color: #2a2a2a"
+    >
+      <div class="container text-center">
+        <p class="font-lg">
+          8 Biblical Herbs in a high-vibrational supplement to boost your
+          energy, revitalize your health, and feel younger
+        </p>
+        <h3 class="fw-bold">God designed you to THRIVE</h3>
+        <p>
+          Click the button below to order your own supply of Wisdom Formula
+          Today!
+        </p>
+        <a href="#buy"><button class="buy-now-button">BUY NOW!</button></a>
+        <p>
+          <b
+            ><em
+              >&#x3e;&#x3e;Read Below to Discover The Power of
+              Wisdom&#x3c;&#x3c;</em
+            ></b
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="py-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>
+              Brain fog, fatigue, depression, joint pain, digestive issues,
+              weight gain, anxiety, sleep problems...
+            </p>
+            <p>...what is going on with our health?</p>
+            <p>Why does every new solution seem to create new problems?</p>
+            <p>Instead of a miracle drug or fad diet...</p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/image1.png"
+              alt="Image 1"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bottle" class="bg-light py-5 bg-gray-cross">
+      <div class="container">
+        <div class="row align-items-center">
+          <h2 class="brown-bold lg-hidden">
+            ...what if we looked to Biblical wisdom for our health?
+          </h2>
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/bottle.png"
+              alt="Image 1"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="brown-bold sm-hidden">
+              ...what if we looked to Biblical wisdom for our health?
+            </h2>
+            <p>
+              Because timeless solutions were encoded in the Bible millennia
+              ago.
+            </p>
+            <p>
+              Wisdom Formula brings this ancient knowledge back to our modern
+              world, to help you thrive as God intended.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 quote">
+      <div class="container text-center">
+        <h3 class="brown fw-semibold fs-5 mb-4">
+          <em>For example, did you know...</em>
+        </h3>
+        <h2 class="brown fw-bold fs-1">
+          The Bible Celebrates the Healing and Spiritual Power of Herbs More
+          Than 128 Times!
+        </h2>
+        <blockquote class="custom-blockquote">
+          <p class="mb-0 fw-semibold">
+            "Fruit trees of all kinds will grow on both banks of the
+            river...Their fruit will serve for food and their leaves for
+            healing."<br /><span class="brown-lt">Ezekial 47:12</span>
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="py-5" style="background-color: #fffce8">
+      <div class="container text-center">
+        <p class="text-center px-4 fw-semibold brown">
+          Patrick & His Team Have Been Featured In:
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-12 mb-4">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/logos.png"
+              alt="Logo 1"
+              class="img-fluid"
+            />
+          </div>
+          <small class="brown-lt-2 fs-6"
+            >Disclaimer: The following statements are back by decades of
+            peer-reviewed research. Read on to learn more...
+          </small>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" class="section-intro" style="background-color: #f4f3e9">
+      <div class="container text-container">
+        <div class="row">
+          <div class="col-md-8 text-content d-flex flex-column">
+            <p>
+              Hello friend,<br /><b class="fw-bold fs-4 text-black"
+                >I'm Dr. Patrick Gentempo.</b
+              >
+            </p>
+            <hr />
+            <div class="lg-hidden sm-center">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/patrick.png"
+                alt="Dr. Patrick Gentempo"
+                class="img-fluid float-right"
+                style="margin: 0 0 20px 20px"
+              />
+            </div>
+            <p>
+              For the past 30+ years, I dedicated my life to helping people live
+              healthier, more vibrant lives.
+            </p>
+            <p>
+              Starting as a practicing chiropractor, I often found new ways to
+              help more and more people.
+            </p>
+            <p>
+              Eventually I founded and co-founded 16 companies, many in health
+              and wellness.
+            </p>
+            <p>
+              One of these was Revealed Films, a media company that helped
+              millions of people discover holistic solutions to the many
+              challenges of modern life.
+            </p>
+            <p>
+              When it came to healthy living, I thought I understood it all...
+            </p>
+            <p class="highlight">Until I traveled to the Holy Land...</p>
+            <p>
+              I was in Israel filming a documentary series about the life of
+              Christ, and that's when everything changed.
+            </p>
+            <p>As I walked through the biblical landscape...</p>
+            <p>
+              ...sitting where Christ sat, standing where He stood, I came to a
+              realization.
+            </p>
+            <p class="highlight">
+              The physical manifestation of health IS a spiritual experience.
+            </p>
+            <p>
+              I began to integrate my faith and health in a new way. I felt the
+              living wisdom of The Bible in my being.
+            </p>
+            <p>
+              That feeling, that vibration I felt in the Holy Land was
+              life-changing. I began to wonder..
+            </p>
+            <p>
+              ...might there be wisdom in the Bible to help us physically
+              thrive?
+            </p>
+            <p><b>Did the Bible give us clues to become more vital?</b></p>
+          </div>
+          <div class="col-md-4 sm-hidden">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/patrick.png"
+              alt="Dr. Patrick Gentempo"
+              class="img-fluid float-right"
+              style="margin: 0 0 20px 20px"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/holyLand.png"
+              alt="Holy Land BG"
+              class="img-fluid bottom-right"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section-headline py-4 px-3"
+      style="background-color: #624933"
+    >
+      <div class="container text-center">
+        <h2 style="color: #fff">
+          This Set Me On A Quest To Rediscover Biblical Health Wisdom And Share
+          It With The World
+        </h2>
+      </div>
+    </section>
+
+    <section class="section-content py-5" style="background-color: #f8f9fa">
+      <div class="container max-5xl">
+        <div class="row px-4 gy-4">
+          <div
+            class="col-md-5 d-flex justify-content-center justify-content-sm-start p-0"
+          >
+            <img
+              src="https://trywisdomnutrition.com/assets/images/bible.png"
+              alt="Holy Land"
+              class="img-fluid lg-hidden"
+              width="342px"
+            />
+            <img
+              src="https://trywisdomnutrition.com/assets/images/bible.png"
+              alt="Holy Land"
+              class="img-fluid sm-hidden"
+            />
+          </div>
+          <div class="col-md-7 order-md-1 p-0">
+            <div
+              class="text-content d-flex flex-column justify-content-between h-100"
+            >
+              <p>
+                Purpose and determination filled my spirit. As I received more
+                information found in scripture, I began noticing references to
+                certain plants.
+              </p>
+              <p class="">So I followed the hints and signs...</p>
+              <p>
+                Eventually, a new vision began to form in my mind. One that
+                combined my expertise in health and wellness with what I was
+                discovering in the Bible.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7 order-md-2 p-0">
+            <div
+              class="text-content pt-4 d-flex flex-column justify-content-between h-100"
+            >
+              <p>It was a vision for a NEW kind of supplement.</p>
+              <p><b>Something beyond just some herbs in a bottle...</b></p>
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/herbs.png"
+                  alt="Book"
+                  width="342px"
+                  class="img-fluid lg-hidden my-4"
+                />
+              </div>
+              <p>
+                A supplement made with an entirely different intention and
+                philosophy...
+              </p>
+              <p>
+                An inspired, all-natural organic herbal formula sourced from the
+                wisdom of the Bible to nourish body, mind, and soul.
+              </p>
+              <p>And I knew Biblical plants were the key.</p>
+            </div>
+          </div>
+          <div class="col-md-5 order-md-2">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/herbs.png"
+              alt="Book"
+              class="img-fluid sm-hidden"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bible-quote">
+      <div class="container">
+        <h2 class="brown fw-semibold fs-1">
+          The Bible Is Clear:<br />knowledge of plants is sacred
+        </h2>
+        <blockquote class="custom-blockquote fw-semibold">
+          <p class="mb-0">
+            "Solomon's wisdom was greater than the wisdom of all the people of
+            the East and greater than all the wisdom of Egypt... He spoke about
+            plant life, from the cedar of Lebanon to the hyssop that grows out
+            of walls."&nbsp;<br />
+            <cite>
+              <span class="brown-lt fs-2 mt-1">Kings 4:30, 33</span>
+            </cite>
+          </p>
+        </blockquote>
+        <p class="mt-3">
+          The greatest, wisest king of the ancient world knew the power of
+          sacred plants.
+        </p>
+        <p>
+          In order to create a new kind of supplement that would help restore
+          our bodies and fortify our spirits...
+        </p>
+        <p>All I had to do was crack the code.</p>
+      </div>
+    </section>
+
+    <section class="section-decoding" style="background-color: #f8f9fa">
+      <div class="container">
+        <h2 class="brown-text fs-1 fw-semibold">
+          Decoding and Distilling Sacred Biblical Wisdom
+        </h2>
+        <div class="row my-5">
+          <div class="col-md-5">
+            <div class="image-container sm-px-4">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/1.png"
+                alt=""
+                class="sm-hidden"
+              />
+              <img
+                src="https://trywisdomnutrition.com/assets/images/1.png"
+                alt=""
+                width="390"
+                class="px-5 lg-hidden mb-5"
+              />
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p>
+              Because after my experience in the Holy Land, I was convinced...
+            </p>
+            <p>
+              Anyone, no matter what their age, deserves this life-affirming
+              experience of full-spectrum health in mind, body, and spirit...
+            </p>
+            <p class="highlight">
+              ...with increased energy, vitality, strength, mental clarity, a
+              pain-free body, and a joyful heart!
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              I asked a team to help me scour the Bible for everything it said
+              about health and healing herbs. We spoke with scholars and
+              herbalists, theologians, and healers...
+            </p>
+            <p>
+              We cross-checked every plant with the best of modern science and
+              holistic medicine.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sacred-plants">
+      <div class="container p-0 w-auto">
+        <h2 class="d-flex flex-column brown pt-5">
+          <span class="fs-4 mb-4 fw-semibold">Here’s what we found... </span>
+          <span class="fw-bold fs-1">The Sacred 8:</span>
+          <span class="fw-semibold"
+            >The Bible’s Most Potent and Mystical Plants</span
+          >
+        </h2>
+        <p class="text-start my-4">
+          Each one is historically used for health and spiritual well-being AND
+          backed up with modern science.
+        </p>
+        <p class="text-start mb-5">
+          Here’s how they show up in the Biblical context:
+        </p>
+        <div class="">
+          <div class="col-md-12 plant-item">
+            <div class="text-image">
+              <div class="text-content">
+                <div class="plant-item-header">
+                  <div class="brown">#1.</div>
+                  <h3>The Resin of Emotional Elevation and Divine Wisdom</h3>
+                </div>
+                <div class="img-container lg-hidden">
+                  <img
+                    src="https://trywisdomnutrition.com/assets/images/2.png"
+                    alt=""
+                    class="img-fluid w-75"
+                  />
+                </div>
+                <p>
+                  This legendary plant resin is mentioned in the Bible over 50
+                  times! It was used to help create an atmosphere of peace and
+                  harmony, elevate the spirits of worshipers, and bring the
+                  sacred into daily life. It held immense value in the ancient
+                  world and is one of the most sacred plants in the Bible.
+                </p>
+              </div>
+              <div class="img-container sm-hidden">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 plant-item">
+            <div class="text-image">
+              <div class="text-content">
+                <div class="plant-item-header">
+                  <div class="brown">#2.</div>
+                  <h3>
+                    The “Tree of Thorns” That Brings Relief, Purification, and
+                    Healing
+                  </h3>
+                </div>
+                <div class="img-container lg-hidden">
+                  <img
+                    src="https://trywisdomnutrition.com/assets/images/3.png"
+                    alt=""
+                    class="img-fluid w-75"
+                  />
+                </div>
+                <p>
+                  This tree carries profound spiritual significance. In biblical
+                  times it was frequently used for rites of cleansing,
+                  strengthening the spirit, and relieving pain. Its spiritual
+                  essence embodies purification.
+                </p>
+              </div>
+              <div class="img-container sm-hidden">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/3.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 plant-item">
+            <div class="text-image">
+              <div class="text-content">
+                <div class="plant-item-header">
+                  <div class="brown">#3.</div>
+                  <h3>Mother Mary’s Revered Herb of Detoxification</h3>
+                </div>
+                <div class="img-container lg-hidden">
+                  <img
+                    src="https://trywisdomnutrition.com/assets/images/4.png"
+                    alt=""
+                    class="img-fluid w-75"
+                  />
+                </div>
+                <p>
+                  Legend holds that a drop of the Virgin Mary’s milk fell onto
+                  this plant, giving it milky veins. For thousands of years,
+                  this plant was a traditional elixir for detoxification and
+                  purification—even more important today with our food and water
+                  polluted by toxins.
+                </p>
+              </div>
+              <div class="img-container sm-hidden">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/4.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 plant-item">
+            <div class="text-image">
+              <div class="text-content">
+                <div class="plant-item-header">
+                  <div class="brown">#4.</div>
+                  <h3>The Biblical Spice Worth 5x Its Weight in Silver</h3>
+                </div>
+                <div class="img-container lg-hidden">
+                  <img
+                    src="https://trywisdomnutrition.com/assets/images/5.png"
+                    alt=""
+                    class="img-fluid w-75"
+                  />
+                </div>
+                <p>
+                  In Biblical times, this spice was worth more than 5x the value
+                  of silver. It is cited throughout scripture, including as a
+                  part of the holy anointing oil, to help bring worshipers
+                  closer to God. It was known Biblically as a herb of
+                  sanctification and used in prayer for blessings.
+                </p>
+              </div>
+              <div class="img-container sm-hidden">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/5.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 plant-item">
+            <div class="text-image">
+              <div class="text-content">
+                <div class="plant-item-header">
+                  <div class="brown">#5.</div>
+                  <h3>Sacred Herb of Mercy</h3>
+                </div>
+                <div class="img-container lg-hidden">
+                  <img
+                    src="https://trywisdomnutrition.com/assets/images/6.png"
+                    alt=""
+                    class="img-fluid w-75"
+                  />
+                </div>
+                <p>
+                  In the Gospel of Matthew, this herb was a symbol of “justice,
+                  mercy, and faithfulness.” At the time the Bible was written,
+                  this spice had so much value that it was often used to make
+                  offerings and tithes to the church.
+                </p>
+              </div>
+              <div class="img-container sm-hidden">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/6.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 plant-item">
+            <div class="text-image">
+              <div class="text-content">
+                <div class="plant-item-header">
+                  <div class="brown">#6.</div>
+                  <h3>The “HOLY WATER” Herb</h3>
+                </div>
+                <div class="img-container lg-hidden">
+                  <img
+                    src="https://trywisdomnutrition.com/assets/images/7.png"
+                    alt=""
+                    class="img-fluid w-75"
+                  />
+                </div>
+                <p>
+                  In orthodox traditions, this special herb is used in rituals
+                  with holy water. When Christ was on the cross and spoke of
+                  thirst, it was used like a sponge to bring moisture to his
+                  lips. Over and over, it shows up in association with water,
+                  cleansing and spiritual nourishment.
+                </p>
+              </div>
+              <div class="img-container sm-hidden">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/7.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 plant-item">
+            <div class="text-image">
+              <div class="text-content">
+                <div class="plant-item-header">
+                  <div class="brown">#7.</div>
+                  <h3>God’s “Ibuprofen”</h3>
+                </div>
+                <div class="img-container lg-hidden">
+                  <img
+                    src="https://trywisdomnutrition.com/assets/images/8.png"
+                    alt=""
+                    class="img-fluid w-75"
+                  />
+                </div>
+                <p>
+                  Many believe that the gold gifted by the three wise men was
+                  actually this plant. Often, it was even worth more than
+                  gold—so much that ancient peoples even called it “gold.” It
+                  also happens to be nature’s most powerful anti-inflammatory,
+                  making it an important ally for the stress of modern life.
+                </p>
+              </div>
+              <div class="img-container sm-hidden">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/8.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 plant-item">
+            <div class="text-image">
+              <div class="text-content">
+                <div class="plant-item-header">
+                  <div class="brown">#8.</div>
+                  <h3>The Miraculous Herb of Christ’s Ascension</h3>
+                </div>
+                <div class="img-container lg-hidden">
+                  <img
+                    src="https://trywisdomnutrition.com/assets/images/9.png"
+                    alt=""
+                    class="img-fluid w-75"
+                  />
+                </div>
+                <p>
+                  When the disciples found Christ’s tomb empty, one miraculous
+                  herb covered the area outside. Ever since, this plant has had
+                  a reputation for facilitating inner peace, emotional balance,
+                  and a spirit of devotion.
+                </p>
+              </div>
+              <div class="img-container sm-hidden">
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/9.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <p
+            class="m-0 p-3 text-start fst-italic fw-semibold"
+            style="opacity: 0.7"
+          >
+            But there’s more to these plants than “just” their spiritual
+            qualities…
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-headline">
+      <div class="container text-center">
+        <h2>
+          Biblical Remedies for Health, Vitality, and even Modern Health
+          Challenges
+        </h2>
+      </div>
+    </section>
+
+    <section class="section-remedies">
+      <div class="container">
+        <p>
+          When I looked at the science of these 8 sacred herbs, I was
+          inspired...
+        </p>
+        <p>
+          <strong
+            >These 8 Herbs support our most important body systems for living
+            vibrant, connected lives.</strong
+          >
+        </p>
+        <p>
+          They can support us today in overcoming (and guarding against) the
+          chronic health challenges of our time:
+        </p>
+        <div class="sub-container">
+          <div class="remedy-item">
+            <div class="col-md-2">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/10.png"
+                alt="Detoxification Icon"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-10">
+              <h3>Detoxification</h3>
+              <p>
+                Triumph over environmental pollutants by cleansing your liver,
+                kidneys, blood, and lymph.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="remedy-item">
+            <div class="col-md-2">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/11.png"
+                alt="Digestion Icon"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-10">
+              <h3>Digestion</h3>
+              <p>
+                Supercharge your nutrient absorption for enhanced metabolism,
+                energy, and body composition.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="remedy-item">
+            <div class="col-md-2">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/12.png"
+                alt="Nervous System Regulation Icon"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-10">
+              <h3>Nervous system regulation</h3>
+              <p>
+                Rebuild a calm, resilient stress response so you can enjoy
+                better sleep and immunity.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="remedy-item">
+            <div class="col-md-2">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/13.png"
+                alt="Mental Clarity Icon"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-10">
+              <h3>Mental clarity</h3>
+              <p>
+                Part the clouds of brain fog and reclaim the natural clarity and
+                sharpness of a pristine mind.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="remedy-item">
+            <div class="col-md-2">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/14.png"
+                alt="Inflammation Response Icon"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-10">
+              <h3>Inflammation response</h3>
+              <p>
+                Quench the raging fires of inflammation at the heart of modern
+                health issues like joint pain, chronic pain, and skin problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-herbs">
+      <div class="container">
+        <p class="section-subtitle text-center brown fs-4 fw-semibold">
+          Science Confirms:
+        </p>
+        <h2 class="brown text-center fw-semibold fs-1 mb-5">
+          These 8 Biblical Herbs are Powerhouses of Health and Vitality
+        </h2>
+
+        <div class="herb-box">
+          <div class="herb-item">
+            <div class="img-container">
+              <div class="img-bubble">
+                <div class="number-bubble-lg fw-bolder fs-3 sm-hidden">
+                  <span>#1</span>
+                </div>
+                <div class="img-bubble-inner-wrapper">
+                  <img
+                    src="/assets/images/herbs/frankinshit-1-top.png"
+                    alt="Frankincense"
+                    class="w-100 h-100 rounded-circle"
+                  />
+                </div>
+              </div>
+              <img
+                src="/assets/images/herbs/frankinshit-1-bottom.png"
+                alt="Frankincense"
+                class="w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="number-bubble-sm fw-bolder fs-3">
+                <span>#1</span>
+              </div>
+              <h3>Frankincense</h3>
+              <p>
+                This incredible resin is packed with health benefits. It is
+                anti-inflammatory, boosts the immune system, and may have
+                anticancer properties. It is well known for protecting the skin
+                and preventing signs of aging. It also affects the brain, acting
+                on receptors known to reduce anxiety and depression.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="herb-box">
+          <div class="herb-item">
+            <div class="img-container">
+              <div class="img-bubble">
+                <div class="number-bubble-lg fw-bolder fs-3">
+                  <span>#2</span>
+                </div>
+                <div class="img-bubble-inner-wrapper">
+                  <img
+                    src="/assets/images/herbs/myrrh-2-top.png"
+                    alt="Frankincense"
+                    class="w-100 h-100 rounded-circle"
+                  />
+                </div>
+              </div>
+              <img
+                src="/assets/images/herbs/myrrh-2-bottom.png"
+                alt="Frankincense"
+                class="w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="number-bubble-sm fw-bolder fs-3">
+                <span>#2</span>
+              </div>
+              <h3>Myrrh</h3>
+              <p>
+                A natural antimicrobial so powerful it is effective against
+                antibiotic resistant bacteria and even has the potential to kill
+                dormant Lyme disease. It is also one of nature's best pain
+                relievers. It contains a remarkable cocktail of compounds that
+                stimulate powerful opioid receptors AND reduce inflammation at
+                the source of chronic pain at the same time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="herb-box">
+          <div class="herb-item">
+            <div class="img-container">
+              <div class="img-bubble">
+                <div class="number-bubble-lg fw-bolder fs-3">
+                  <span>#3</span>
+                </div>
+                <div class="img-bubble-inner-wrapper">
+                  <img
+                    src="/assets/images/herbs/milk-t-3-top.png"
+                    alt="Frankincense"
+                    class="w-100 h-100 rounded-circle"
+                  />
+                </div>
+              </div>
+              <img
+                src="/assets/images/herbs/milk-t-3-bottom.png"
+                alt="Frankincense"
+                class="w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="number-bubble-sm fw-bolder fs-3">
+                <span>#3</span>
+              </div>
+              <h3>Milk Thistle</h3>
+              <p>
+                The most famous and well-researched plant in the world for liver
+                health. It contains a group of compounds known as "silymarin"
+                with powerful antioxidant, antiviral, and anti-inflammatory
+                properties. Your liver is THE detox organ, so the healthier your
+                liver is, the healthier you are. New research shows it may even
+                help protect the aging brain from Alzheimer's and dementia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="herb-box">
+          <div class="herb-item">
+            <div class="img-container">
+              <div class="img-bubble">
+                <div class="number-bubble-lg fw-bolder fs-3">
+                  <span>#4</span>
+                </div>
+                <div class="img-bubble-inner-wrapper">
+                  <img
+                    src="/assets/images/herbs/basil-4-top.png"
+                    alt="Frankincense"
+                    class="w-100 h-100 rounded-circle"
+                  />
+                </div>
+              </div>
+              <img
+                src="/assets/images/herbs/basil-4-bottom.png"
+                alt="Frankincense"
+                class="w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="number-bubble-sm fw-bolder fs-3">
+                <span>#4</span>
+              </div>
+              <h3>Holy Basil (Tulsi)</h3>
+              <p>
+                A powerful adaptogenic herb that helps you become more
+                resilient. Studies show this remarkable plant has
+                anti-inflammatory, immune-boosting, and heart-protecting
+                properties. Research shows Tulsi may protect vital organs from
+                stress and toxins, balance blood sugar, and even support
+                emotional health in times of stress.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="herb-box">
+          <div class="herb-item">
+            <div class="img-container">
+              <div class="img-bubble">
+                <div class="number-bubble-lg fw-bolder fs-3">
+                  <span>#5</span>
+                </div>
+                <div class="img-bubble-inner-wrapper">
+                  <img
+                    src="/assets/images/herbs/sinnamon-5-top.png"
+                    alt="Frankincense"
+                    class="rounded-circle"
+                  />
+                </div>
+              </div>
+              <img
+                src="/assets/images/herbs/sinnamon-5-bottom.png"
+                alt="Frankincense"
+                class="w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="number-bubble-sm fw-bolder fs-3">
+                <span>#5</span>
+              </div>
+              <h3>Cinnamon</h3>
+              <p>
+                The world's #1 spice, this aromatic tree bark is bursting with
+                antioxidants and has potent anti-inflammatory action. It is also
+                one of the best natural herbs for balancing blood sugar and A1C.
+                If that wasn't enough, Cinnamon is a powerful antimicrobial with
+                well-established antifungal (especially against candida),
+                antibacterial, and antiviral effects.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="herb-box">
+          <div class="herb-item">
+            <div class="img-container">
+              <div class="img-bubble">
+                <div class="number-bubble-lg fw-bolder fs-3">
+                  <span>#6</span>
+                </div>
+                <div class="img-bubble-inner-wrapper">
+                  <img
+                    src="/assets/images/herbs/anise-6-top.png"
+                    alt="anise"
+                    class="w-100 h-100 rounded-circle"
+                  />
+                </div>
+              </div>
+              <img
+                src="/assets//images/herbs/anise-6-bottom.png"
+                alt="anise"
+                class="w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="number-bubble-sm fw-bolder fs-3">
+                <span>#6</span>
+              </div>
+              <h3>Anise</h3>
+              <p>
+                A nutritional powerhouse with a wide range of health benefits.
+                Research suggests that anise seed may help heal stomach ulcers,
+                regulate blood sugar levels, fight fungus and skin disease,
+                reduce depression, and ease symptoms of menopause.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="herb-box">
+          <div class="herb-item">
+            <div class="img-container">
+              <div class="img-bubble">
+                <div class="number-bubble-lg fw-bolder fs-3">
+                  <span>#7</span>
+                </div>
+                <div class="img-bubble-inner-wrapper">
+                  <img
+                    src="/assets/images/herbs/hyssop-7-top.png"
+                    alt="Frankincense"
+                    class="w-100 h-100 rounded-circle"
+                  />
+                </div>
+              </div>
+              <img
+                src="/assets/images/herbs/hyssop-7-bottom.png"
+                alt="Frankincense"
+                class="w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="number-bubble-sm fw-bolder fs-3">
+                <span>#7</span>
+              </div>
+              <h3>Hyssop</h3>
+              <p>
+                This simple flower is rich in flavonoids and essential oils to
+                boost health. It can work wonders for the respiratory and
+                digestive systems, and is a traditional herbal remedy for colds
+                and lung infections. In the stomach, evidence suggests it
+                increases natural digestive enzymes, and deeper in the gut it
+                helps fight parasites.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="herb-box">
+          <div class="herb-item">
+            <div class="img-container">
+              <div class="img-bubble">
+                <div class="number-bubble-lg fw-bolder fs-3">
+                  <span>#8</span>
+                </div>
+                <div class="img-bubble-inner-wrapper">
+                  <img
+                    src="/assets/images/herbs/turmeric-8-top.png"
+                    alt="Frankincense"
+                    class="w-100 h-100 rounded-circle"
+                  />
+                </div>
+              </div>
+              <img
+                src="/assets/images/herbs/turmeric-8-bottom.png"
+                alt="Frankincense"
+                class="w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="number-bubble-sm fw-bolder fs-3">
+                <span>#8</span>
+              </div>
+              <h3>Turmeric</h3>
+              <p>
+                Turmeric (also known as curcumin) is THE most researched
+                medicinal plant in the world. There are 30,000 published studies
+                about its health benefits, and 300+ clinical trials. It is one
+                of nature's most potent anti-inflammatories, making it effective
+                against dozens of modern health challenges. Turmeric also
+                supports balanced blood sugar levels, relieves arthritis, and
+                even acts as a natural pain reliever.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-herbs-overview">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/22.png"
+              alt="Wisdom Bottle"
+              class="img-fluid sm-hidden"
+            />
+            <img
+              src="/assets/images/product_circle.png"
+              alt="Wisdom Bottle"
+              class="img-fluid lg-hidden"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="lg-hidden py-4">
+        <div class="sm-herb-overview-item">
+          <img src="/assets/images/herbs/list-tulsi.png" />
+          <div>
+            <h3>Tulsi</h3>
+            <p>
+              Relaxes and Columns your Mind Help Normalize Blood Pressure,
+              Lipids and Glucose
+            </p>
+          </div>
+        </div>
+
+        <div class="sm-herb-overview-item">
+          <img src="/assets/images/herbs/list-turmeric.png" />
+          <div>
+            <h3>Turmeric</h3>
+            <p>Supports a healthy inflammatory response</p>
+          </div>
+        </div>
+
+        <div class="sm-herb-overview-item">
+          <img src="/assets/images/herbs/list-sinnamon.png" />
+          <div>
+            <h3>Cinnamon</h3>
+            <p>Supports a healthy inflammatory response immunity-boosting</p>
+          </div>
+        </div>
+
+        <div class="sm-herb-overview-item">
+          <img src="/assets/images/herbs/list-tulsi.png" />
+          <div>
+            <h3>Hyssop</h3>
+            <p>supports Healthy Circulation</p>
+          </div>
+        </div>
+
+        <div class="sm-herb-overview-item">
+          <img src="/assets/images/herbs/list-frank.png" />
+          <div>
+            <h3>Frankincense</h3>
+            <p>
+              Fortifies your immune System supports Healthy inflammatory
+              response
+            </p>
+          </div>
+        </div>
+        <div class="sm-herb-overview-item">
+          <img src="/assets/images/herbs/list-myrrh.png" />
+          <div>
+            <h3>Myrrh</h3>
+            <p>Antioxidant to Fight free radicals</p>
+          </div>
+        </div>
+        <div class="sm-herb-overview-item">
+          <img src="/assets/images/herbs/list-anise.png" />
+          <div>
+            <h3>Anise</h3>
+            <p>Enriches Your blood to increase your energy levels</p>
+          </div>
+        </div>
+        <div class="sm-herb-overview-item">
+          <img src="/assets/images/herbs/list-milk.png" />
+          <div>
+            <h3>Milk Thistle</h3>
+            <p>Support your liver and the body's Detoxification pathway</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-science-spirituality">
+      <div class="container text-center">
+        <h4>But science is only ONE part of the equation...</h4>
+        <h2>
+          There Is More To Health Than Biochemistry And Scientific Research
+        </h2>
+        <p>Look at this biblical recipe for a spiritual anointing oil.</p>
+        <blockquote class="custom-blockquote fs-6">
+          <p>
+            “Then the LORD said to Moses, "Take the following fine spices: 500
+            shekels of liquid myrrh, half as much of fragrant cinnamon, 250
+            shekels of fragrant calamus, 500 shekels of cassia—all according to
+            the sanctuary—and a hin of olive oil. Make these into a sacred
+            anointing oil, a fragrant blend, the work of a perfumer. It will be
+            the sacred anointing oil.”<br /><span class="brown-lt"
+              >Exodus 30:22-25 (NIV)</span
+            >
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section-anointing-oil">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <p>
+              <strong
+                >You may think an anointing oil has nothing to do with
+                health.</strong
+              >
+            </p>
+            <p>But look deeper. What is this <em>really</em> for?</p>
+            <p>
+              It is an ancient formula using the energetic and spiritual
+              properties of plants <em>to make something sacred...</em>
+            </p>
+            <p>...to raise the vibration.</p>
+            <p>
+              Now <strong>Wisdom Formula</strong> is not a sacred anointing
+              formula.
+            </p>
+            <p>
+              However, these Biblical plants clearly do something beyond
+              <em>mere biology.</em>
+            </p>
+            <p>This deeper wisdom was known in ancient times.</p>
+          </div>
+          <div class="col-md-3 align-items-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/23.png"
+              alt="Anointing Oil"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-health-spiritual-experience">
+      <div class="container position-relative">
+        <div class="row">
+          <p class="lead">Remember...</p>
+          <h2>Health Is BOTH A Physical AND<br />A Spiritual Experience</h2>
+          <div class="col-9">
+            <p>
+              We have physical bodies. We need the vitamins, minerals, and high
+              quality plant compounds to express our God-given health.
+            </p>
+            <p>And we also have spiritual energy.</p>
+            <p>
+              When we raise our vibration and boost our energy, we physically
+              feel better—our health and vitality naturally improves.
+            </p>
+            <p>
+              God created these herbs to have powerful properties that affect
+              our energy.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center mt-5">
+          <div class="col-md-10 offset-md-1">
+            <div class="card flex-row align-items-center">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/25.png"
+                class="card-img-left"
+                alt="Wisdom Formula"
+                style="
+                  width: 230px;
+                  height: auto;
+                  border-radius: 10px 0 0 10px;
+                  margin-left: 11px;
+                "
+              />
+              <div class="card-body">
+                <h4 class="card-title">
+                  Wisdom Formula Acts on Multiple Levels!
+                </h4>
+                <p class="card-text">
+                  It gives you the most powerful, high-quality, science-backed,
+                  health-boosting herbs...
+                </p>
+                <p class="card-text">
+                  <strong
+                    >...AND it does it with the energetics encoded into these
+                    sacred Biblical herbs.</strong
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-image-container">
+          <img
+            src="https://trywisdomnutrition.com/assets/images/24.png"
+            alt="Background"
+            class="bg-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-ancient-modern-science">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>
+              A Health-Transforming Fusion of Ancient Wisdom with Modern Science
+            </h2>
+            <p>
+              To create this powerful new formula, we took every precaution to
+              guarantee not just the highest, purest potency...
+            </p>
+            <p>
+              ...but also maintain the energetic, spiritual, and vibrational
+              aspects of these herbs.
+            </p>
+            <p>It’s expensive, time-consuming, and absolutely worth it.</p>
+            <h4 class="mb-0 pb-0">Here’s how we do it:</h4>
+            <h2 class="m-0 p-0"><strong>BEYOND ORGANIC:</strong></h2>
+            <h4 class="mt-0 pt-0">
+              <em>Sourcing the BEST Ingredients, no matter the cost</em>
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              Most “organic” product companies use the cheapest stuff they can
+              find, as long as it’s labeled “organic.”
+            </p>
+            <p><em>We go beyond labels and prices.</em></p>
+            <p>
+              We investigate the history behind each ingredient. We talk with
+              the farmers. We learn the story of the land, the seed, and the
+              harvesting practices.
+            </p>
+            <p>And just to be sure...</p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/26.png"
+              alt="Beyond Organic"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-test-ingredients">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2>We Test Every Ingredient</h2>
+            <h3>3 Different Ways.</h3>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/27.png"
+              alt="Ingredient Testing"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-7">
+            <p>
+              If anything fails even one of those tests, we refuse to use it.
+            </p>
+            <p>
+              Once, we discovered a frankincense source was grown on land
+              heavily radiated from bombing (despite being labeled “organic”).
+            </p>
+            <p>
+              We immediately threw it out and switched suppliers even though it
+              cost 4x our normal price.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center pt-2">
+          <div class="col-12">
+            <p>
+              <strong
+                >Sometimes we pay 5-10X more per pound for one
+                ingredient!</strong
+              >
+              We don’t just source “organic” ingredients…
+            </p>
+            <p>…we source the BEST.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-herbal-companies">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2>How Most “Herbal” Companies Sabotage Their Products</h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p>
+              Have you ever tried an herbal supplement, excited about the idea
+              of natural medicine…
+            </p>
+            <p><strong>…only to be disappointed by the results?</strong></p>
+            <p>Here’s why that happens:</p>
+            <p>Most companies optimize for speed and volume.</p>
+            <p>
+              They use heat and alcohol for the fastest possible extraction.
+              They use cheap plastic and metal containers.
+            </p>
+            <p>
+              These methods are faster and “less expensive”, but
+              <strong>YOU pay the price in quality:</strong>
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/28.png"
+              alt="Herbal Extraction"
+              class="img-fluid"
+              style="height: auto; position: relative"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p>
+              The heat destroys sensitive compounds. Fast extraction strips the
+              plant energetically. Plastic and metal leach toxins into the
+              product, tainting its potency.
+            </p>
+            <p>You end up with a pale shadow of what it could be.</p>
+            <p>
+              <strong
+                >This is why most herbal supplements never give you the results
+                you wish they did.</strong
+              >
+            </p>
+            <p><em>Wisdom Formula is different…</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-extraction-process">
+      <div class="container text-center">
+        <h2>Unwavering Integrity • Pristine Purity</h2>
+        <h3>Our Raw Cold Herbal Extraction Process</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/29.png"
+              alt="Extraction Process 2"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/30.png"
+              alt="Extraction Process 3"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <p style="text-align: left">
+          We pay attention to every last detail to ensure maximum purity and
+          potency from seed to bottle.
+        </p>
+        <p style="text-align: left">That means we:</p>
+        <div class="process-box">
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Extract everything with our patented Acoustic Glycosomal
+              Technology to ensure maximum potency
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              <span class="highlight">NEVER</span> heat anything over 100
+              degrees so it stays raw and energetically active.
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Use NO alcohol, gluten, soy, corn, toxic additives, fillers,
+              binders, excipients, dairy or any toxic chemicals so you get a
+              PURE product
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Use ONLY triple distilled biophotonic structured water (even
+              though it takes 6 days to produce) for maximum effect in your body
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Use Organic and Non-GMO certifications to ensure you are getting
+              only the best
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Store all of our raw materials and finished goods in a
+              climate-controlled environment so it won’t be degraded by the time
+              it gets to your house (almost nobody does this)
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Use Miron Biophotonic violet glass bottles, extending shelf life
+              and infusing it with natural energy fields.
+            </p>
+          </div>
+          <p>
+            We even pay the employees involved in making Wisdom double the
+            industry standard and keep a joy-filled, healthy work environment to
+            avoid negative energy and toxic thoughts going into our products.
+          </p>
+          <p>But we don’t stop there...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-quantum-technologies">
+      <div class="container text-center">
+        <h2>
+          We Combine All This With Cutting Edge Quantum Energetic Technologies
+        </h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="quantum-item">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/32.png"
+                alt="Quantum Laboratory"
+                class="img-fluid"
+              />
+              <p>
+                We have the only Quantum Vibrational testing laboratory in the
+                world run by the world-famous Quantum Biologist Dr. Glen Rein.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="quantum-item">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/33.png"
+                alt="Quantum Products"
+                class="img-fluid"
+              />
+              <p>
+                We infuse our products with powerful light and sound frequencies
+                to make sure they are biologically and energetically “active”.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="quantum-item">
+              <img
+                src="https://trywisdomnutrition.com/assets/images/34.png"
+                alt="ORMUS Mineral"
+                class="img-fluid"
+              />
+              <p>
+                We use a proprietary ORMUS living mineral complex to raise the
+                vibration and life force energy of our products (even though it
+                can take up to 3 years to produce).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-remedies-headline">
+      <div class="container">
+        <h2 style="color: white">
+          Crafted By Hand in Small Batches for Maximum Potency
+        </h2>
+      </div>
+    </section>
+
+    <section class="section-out-of-stock">
+      <div class="container">
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6">
+            <p>We rigorously test every single batch for potency.</p>
+            <p>
+              <strong
+                >We’ve found that large-scale production can reduce potency by
+                67%.</strong
+              >
+            </p>
+            <p>
+              That’s why we ONLY produce in small batches – even if it takes
+              longer and means less profit.
+            </p>
+            <p>
+              Because we are committed to providing you with a product that
+              reflects our values, no matter what.
+            </p>
+            <p><strong>We never sacrifice potency for profit.</strong></p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/35.png"
+              alt="Production Process"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-12 text-center">
+            <h2 class="text-brown">
+              Unfortunately, This Also Means We Are Often “Out Of Stock”
+            </h2>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6">
+            <p>
+              In fact, we’ve sold out every single batch of Wisdom Formula we’ve
+              ever made.
+            </p>
+            <p>Our prior batch sold out in a matter of weeks.</p>
+            <p>It was even back ordered for 4 months!</p>
+            <p>But the result of our meticulous, uncompromising process?</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/36.png"
+              alt="Limited Stock"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="quote-box">
+              <h2>
+                A Pure, High-Vibrational Bible-Based Supplement To Nourish your
+                Body, Mind, and Soul...<br />
+              </h2>
+              <p><strong>...that tastes AMAZING.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-higher-plane">
+      <div class="container text-center">
+        <h2>Wisdom Formula: Take Your Health to a Higher Plane</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <p>
+              Wisdom Formula is not just another supplement to hide in the back
+              corner of your kitchen cabinet.
+            </p>
+            <p><strong>It is an entire philosophy in a bottle.</strong></p>
+            <p>
+              It’s the product of a vision where your physical body is a sacred
+              vessel for:
+            </p>
+          </div>
+          <div class="col-md-5 justify-content-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/38.png"
+              alt="Wisdom Bottle"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="process-box">
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Brilliant cognitive function, natural intelligence, and razor
+              sharp memory
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Abundant energy and vitality to fuel your prosperous and thriving
+              life while pursuing your God-given gifts
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>Deep, rejuvenating sleep that restores your systems</p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Joyful Resilience to the relentless stress of our busy, hectic
+              lives
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Freedom from the chronic, preventable health challenges that
+              plague modern life
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Pain-free joints to enjoy full-range of motion into your golden
+              years
+            </p>
+          </div>
+          <div class="process-item">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/checkmark.png"
+              alt="Check Mark"
+              class="checkmark"
+            />
+            <p>
+              Full absorption of nutrients and detoxification of impurities, so
+              you can enjoy the beauty of creation
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-ways-to-use">
+      <div class="container text-center">
+        <h2>3 Powerful Ways to Use It:</h2>
+        <div class="row no-gutters justify-content-center">
+          <div class="col-md-12 way-to-use-box">
+            <div class="row h-100">
+              <div
+                class="col-md-4 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/40.png"
+                  alt="Raw"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="col-md-8 way-to-use-text d-flex flex-column justify-content-center"
+              >
+                <h3>1 Raw</h3>
+                <p>
+                  Put a dropper right under your tongue and feel it work almost
+                  immediately. (My preferred method!)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 way-to-use-box">
+            <div class="row h-100">
+              <div
+                class="col-md-4 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/41.png"
+                  alt="Mix With Meals or Beverages"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="col-md-8 way-to-use-text d-flex flex-column justify-content-center"
+              >
+                <h3>2 Mix With Meals or Beverages</h3>
+                <p>
+                  Wisdom Formula tastes amazing. You can use it to add flavor,
+                  nutrition, and vibrations to smoothies, juices or other cold
+                  drinks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 way-to-use-box">
+            <div class="row h-100">
+              <div
+                class="col-md-4 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="https://trywisdomnutrition.com/assets/images/42.png"
+                  alt="Topically"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="col-md-8 way-to-use-text d-flex flex-column justify-content-center"
+              >
+                <h3>3 Topically</h3>
+                <p>
+                  Several of the herbs in Wisdom Formula are key ingredients to
+                  many high-end beauty products. You can apply Wisdom Formula to
+                  your skin before bed to tighten, revitalize, and restore your
+                  youthful healthy glow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-remedies-headline">
+      <div class="container">
+        <h2 style="color: white">A Gift For Everyone</h2>
+      </div>
+    </section>
+
+    <section class="section-benefits">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p>
+              Of course you don’t have to be a Christian to take
+              <strong>Wisdom Formula!</strong>
+            </p>
+            <p>This product benefits EVERYONE.</p>
+            <p>
+              <strong
+                >Friends, family, and relatives LOVE it, no matter their
+                spiritual views.</strong
+              >
+            </p>
+            <p>
+              The 8 herbs we use in this are backed up by thousands of
+              scientific studies.
+            </p>
+            <p>
+              <strong
+                >These plants were revered in virtually every single culture
+                that ever came into contact with them.</strong
+              >
+            </p>
+            <p>
+              From ancient Egypt to India to the fertile crescent, all the
+              ancient civilizations held these plants as powerful medicines.
+            </p>
+            <p>
+              And you can 8 of them in the highest quality in one simple bottle.
+            </p>
+            <p>However, you may need to act fast…</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/43.png"
+              alt="Wisdom Formula Bottle"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-powerful">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>
+              Wisdom Formula Is So Powerful And So Effective That Word Has
+              Already Gotten Out...
+            </h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/44.png"
+              alt="Bottles Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-8">
+            <p>
+              People all over the world are discovering this incredible formula
+              for themselves...
+            </p>
+            <p>
+              <strong
+                >And they’re ordering six or more bottles at a time...</strong
+              >
+            </p>
+            <p>
+              They’re even buying it for their whole families: parents, kids,
+              siblings, grandparents and loved ones!
+            </p>
+            <p>
+              That way they don’t just get a short, temporary boost in their
+              energy and vitality...
+            </p>
+            <p>
+              <strong
+                >...they create a rock-solid foundation of full-spectrum health
+                in body, mind, and spirit.</strong
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>
+              There is just so much research on the benefits of each ingredient
+              inside Wisdom Formula…
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p>
+              ...all backed up by the timeless wisdom of
+              <strong>The Bible.</strong>
+            </p>
+            <p>It makes sense...</p>
+            <p><strong>The longer you use it, the better you feel.</strong></p>
+            <p>
+              But of course with so many people choosing to order multiple
+              bottles of Wisdom Formula at a time...
+            </p>
+            <p>...demand often outpaces our supply</p>
+            <p>
+              Which means
+              <strong
+                >people have been forced to wait up to 4 months until the next
+                batch is produced.</strong
+              >
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/45.png"
+              alt="Herbs Bottle Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-remedies-headline">
+      <div class="container">
+        <h2 style="color: white">
+          The Truth Is That We Have Very Limited Supplies Of Wisdom Formula
+        </h2>
+      </div>
+    </section>
+
+    <section class="section-slow-process">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-left">
+            <p>This is not a marketing gimmick, it’s a fact.</p>
+            <p>
+              <strong
+                >That’s just the price we pay for not sacrificing our standards
+                to make a quick buck.</strong
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p><strong>Remember...</strong></p>
+            <h2>
+              <strong
+                >Wisdom Formula Is Produced With A Slow, Complex
+                Process...</strong
+              >
+            </h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p>
+              This process is CRUCIAL for producing the highest quality
+              Bible-based Supplement on the market today...
+            </p>
+            <p>But it’s also extremely time-consuming and expensive.</p>
+            <p>
+              That means we can only produce a limited number of bottles at any
+              given time.
+            </p>
+            <p>When we run out...</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/46.png"
+              alt="Pills and Money Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>
+              We won’t have any stock until we go through the whole, long
+              production process again.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-get-hands-on">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>
+              Here’s How You Can Get Your Hands On a Fresh Bottle of Wisdom
+              Formula TODAY
+            </h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p>
+              While continuing to use Wisdom Formula for a full three months can
+              create amazing shifts in your health and well-being...
+            </p>
+            <p>
+              When you commit to using Wisdom Formula for a full six months...
+            </p>
+            <p>...that’s when the greatest benefits happens.</p>
+            <p>
+              Because you’re truly giving your entire being the “high-frequency
+              reset” it deserves.
+            </p>
+            <p>It gives you enough time for True Health to be expressed.</p>
+            <p>And the good news is...</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/47.png"
+              alt="Wisdom Formula Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pricing">
+      <div class="container text-center">
+        <h2>Normally Wisdom Formula Retails for $59 Per Bottle...</h2>
+        <p>
+          You Can Get Your Very Own Supply of Wisdom Formula At A Major Savings
+          Off the Retail Price!
+        </p>
+        <p>
+          The more Wisdom Formula you stock up on, the more money you save! We
+          love to reward bulk purchases!
+        </p>
+        <p>
+          You can get 6 bottles for a massive 32% discount! Plus, when you order
+          a multi-bottle package, we’ll cover all the shipping and handling
+          FREE!
+        </p>
+      </div>
+    </section>
+    <section class="section-package">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Get Started Now With the Right Package For You...</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 package-box">
+            <div class="package-content">
+              <h3>1 Month Supply</h3>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/48.png"
+                alt="1 Month Supply"
+                class="img-fluid"
+                style="max-width: 39%; margin: 0 auto"
+              />
+              <p class="price">$59/ea</p>
+              <p class="total">Total: $59</p>
+              <p class="shipping">+ Shipping & Handling</p>
+              <a
+                href="https://wisdomheal.pay.clickbank.net/?cbitems=1-f-59&cbfid=54411&cbskin=35554"
+                ><button class="btn btn-primary">BUY NOW!</button></a
+              >
+              <p class="guarantee">180 Day Money Back Guarantee</p>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/payment-options.png"
+                alt="Payment Options"
+                class="payment-options img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 package-box best-value-box">
+            <div
+              class="package-content"
+              style="background-color: #fefdde; height: 103%; margin-top: -1%"
+            >
+              <img
+                src="https://trywisdomnutrition.com/assets/images/55.png"
+                alt="Best Value"
+                class="best-value-img"
+              />
+              <h3>6 Month Supply</h3>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/49.png"
+                alt="6 Month Supply"
+                class="img-fluid"
+              />
+              <p class="price">$39/ea</p>
+              <p class="total">Total: $234</p>
+              <p class="shipping">Free shipping</p>
+              <a
+                href="https://wisdomheal.pay.clickbank.net/?cbitems=6-f-39&cbfid=54411&cbskin=35557"
+                ><button class="btn btn-primary">BUY NOW!</button></a
+              >
+              <p class="guarantee">180 Day Money Back Guarantee</p>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/payment-options.png"
+                alt="Payment Options"
+                class="payment-options img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 package-box">
+            <div class="package-content">
+              <h3>3 Month Supply</h3>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/50.png"
+                alt="3 Month Supply"
+                class="img-fluid"
+                style="max-width: 80%; margin: 0 auto"
+              />
+              <p class="price">$49/ea</p>
+              <p class="total">Total: $147</p>
+              <p class="shipping">Free shipping</p>
+              <a
+                href="https://wisdomheal.pay.clickbank.net/?cbitems=3-f-49&cbfid=54411&cbskin=35556"
+                ><button class="btn btn-primary">BUY NOW!</button></a
+              >
+              <p class="guarantee">180 Day Money Back Guarantee</p>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/payment-options.png"
+                alt="Payment Options"
+                class="payment-options img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-remedies-headline">
+      <div class="container">
+        <h2 style="color: white">
+          Discover The Benefits For Yourself By Trying Wisdom Formula Risk-free.
+        </h2>
+      </div>
+    </section>
+
+    <section class="section-money-back-guarantee p-5">
+      <div class="container text-center guarantee-container">
+        <div class="guarantee-text">
+          <h2>Protected by our Good Faith</h2>
+          <h3>MONEY BACK GUARANTEE</h3>
+          <p>
+            Every order of Wisdom comes with a 180-day, 100% Good Faith
+            money-back guarantee.
+          </p>
+          <p>Try it.</p>
+          <p>
+            If you don’t experience remarkable results
+            <strong>on your first bottle...</strong>
+          </p>
+          <p>
+            ...Including significantly more youthful energy, better sleep,
+            improved digestion, and less muscle, nerve and joint pain...
+          </p>
+          <p>
+            <strong
+              >We will refund every penny of your order, no questions
+              asked.</strong
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-customer-support">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              Of course, we’ll be disappointed it didn’t work for you. We really
+              believe in this product and poured our hearts and souls into
+              making it as potent as possible...
+            </p>
+            <p>
+              ...but it’s very important to us that you get value from our hard
+              work.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p>
+              If you take it consistently and still feel it’s not working for
+              you...
+            </p>
+            <p>
+              All you need to do is reach out to our US-based customer support
+              team and return the bottles <em>(including the used one)</em>.
+            </p>
+            <p><strong>We make this guarantee in Good Faith.</strong></p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/52.png"
+              alt="Customer Support"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              We are a small company and believe in this product. We trust you
+              to be honorable with our generous return policy.
+            </p>
+            <p>
+              <em
+                >(Note: If you send us back more than one used bottle you will
+                not qualify. This is what we mean by good faith.)</em
+              >
+            </p>
+            <p>
+              Again, simply contact our US-based customer support team, they
+              will kindly guide you through the process and we’ll refund every
+              penny of your order, no questions asked.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-supplements">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4>Before I sign off here, I have one more question for you...</h4>
+            <h2>How Many Supplements Are In Your Kitchen?</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center my-4">
+          <div class="col-md-8">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/53.png"
+              alt="Supplements in Kitchen"
+              class="img-fluid mx-auto d-block"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>More importantly...</p>
+            <p>...how many of these are of the highest quality?</p>
+            <p>
+              How many of them are made with so much care and attention to
+              detail?
+            </p>
+            <p>With love?</p>
+            <p>
+              How many of them are sourced in the deep wisdom of The Bible
+              itself?
+            </p>
+            <p>
+              With Wisdom Formula, you get all 8 of the most powerful herbs
+              spoken of in scripture...
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p>...AND backed up by modern science...</p>
+            <p>...AND with their energetic frequencies intact...</p>
+            <p>
+              AND made with one of the most pain-staking and high-quality
+              extraction processes in the world...
+            </p>
+            <p><strong>For as low as $39 per bottle.</strong></p>
+            <p>
+              It is an incredible offer. And that’s why we sell out every time.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://trywisdomnutrition.com/assets/images/54.png"
+              alt="Wisdom Formula Bottles"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pricing"></section>
+    <section class="section-package" id="buy">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>
+              Discover The Way God Meant For You To Experience Your Body… With
+              Increased Energy, Clarity, And Longevity.
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 package-box">
+            <div class="package-content">
+              <h3>1 Month Supply</h3>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/48.png"
+                alt="1 Month Supply"
+                class="img-fluid"
+                style="max-width: 39%; margin: 0 auto"
+              />
+              <p class="price">$59/ea</p>
+              <p class="total">Total: $59</p>
+              <p class="shipping">+ Shipping & Handling</p>
+              <a
+                href="https://wisdomheal.pay.clickbank.net/?cbitems=1-f-59&cbfid=54411&cbskin=35554"
+                ><button class="btn btn-primary">BUY NOW!</button></a
+              >
+              <p class="guarantee">180 Day Money Back Guarantee</p>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/payment-options.png"
+                alt="Payment Options"
+                class="payment-options img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 package-box best-value-box">
+            <div
+              class="package-content"
+              style="background-color: #fefdde; height: 103%; margin-top: -1%"
+            >
+              <img
+                src="https://trywisdomnutrition.com/assets/images/55.png"
+                alt="Best Value"
+                class="best-value-img"
+              />
+              <h3>6 Month Supply</h3>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/49.png"
+                alt="6 Month Supply"
+                class="img-fluid"
+              />
+              <p class="price">$39/ea</p>
+              <p class="total">Total: $234</p>
+              <p class="shipping">Free shipping</p>
+              <a
+                href="https://wisdomheal.pay.clickbank.net/?cbitems=6-f-39&cbfid=54411&cbskin=35557"
+                ><button class="btn btn-primary">BUY NOW!</button></a
+              >
+              <p class="guarantee">180 Day Money Back Guarantee</p>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/payment-options.png"
+                alt="Payment Options"
+                class="payment-options img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 package-box">
+            <div class="package-content">
+              <h3>3 Month Supply</h3>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/50.png"
+                alt="3 Month Supply"
+                class="img-fluid"
+                style="max-width: 80%; margin: 0 auto"
+              />
+              <p class="price">$49/ea</p>
+              <p class="total">Total: $147</p>
+              <p class="shipping">Free shipping</p>
+              <a
+                href="https://wisdomheal.pay.clickbank.net/?cbitems=3-f-49&cbfid=54411&cbskin=35556"
+                ><button class="btn btn-primary">BUY NOW!</button></a
+              >
+              <p class="guarantee">180 Day Money Back Guarantee</p>
+              <img
+                src="https://trywisdomnutrition.com/assets/images/payment-options.png"
+                alt="Payment Options"
+                class="payment-options img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-faq">
+      <div class="container">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <h3>What Does Wisdom Taste Like?</h3>
+        <div class="faq-item">
+          <p>
+            Wisdom tastes absolutely delicious! Because we use such high-quality
+            ingredients, Wisdom Formula tastes fantastic, even with no
+            sweeteners or flavors added. You can add Wisdom Formula to salads,
+            teas, drinks, and more for an extra health boost! It has a light
+            botanical flavor that’s both full of natural goodness and free from
+            anything artificial. The reason you’ll experience the flavor of
+            botanicals is that we use such high-quality, fresh herbs that you
+            can taste their delicious vitality the moment it hits your tongue.
+          </p>
+        </div>
+        <h3>Is shipping free?</h3>
+        <div class="faq-item">
+          <p>
+            Free shipping is only valid in the US for 3 and 6 bottle orders. For
+            orders of 1 bottle, shipping costs $5.95. There is a flat rate fee
+            for each additional item for international orders. International
+            shipping rates vary.
+          </p>
+        </div>
+        <h3>What if it doesn’t work for me?</h3>
+        <div class="faq-item">
+          <p>
+            We offer a 100% Good Faith guarantee. If for any reason Wisdom
+            doesn’t work for you, we’ll provide a full refund for the first 180
+            days. That being said, we are confident you’ll love how you feel
+            taking Wisdom Formula.
+          </p>
+        </div>
+        <h3>How long should I take Wisdom Formula to see results?</h3>
+        <div class="faq-item">
+          <p>
+            Everyone’s body and health situation is different, so we cannot make
+            any guarantees regarding how long it will take for you to see
+            results. That said, Wisdom Formula’s benefits tend to come in waves.
+            From the first drop/sip, many users feel the first effects and
+            benefits appearing as early as a few hours after their first dose.
+            Within the first few days, many users experience increased energy,
+            clearer thinking, and improved sleep. Many users experience
+            significant relief from their digestive, stress, and detoxification
+            challenges and overall well-being 3–6 months in when taking Wisdom
+            consistently.
+          </p>
+        </div>
+        <h3>Can I take Wisdom Formula if I’m pregnant?</h3>
+        <div class="faq-item">
+          <p>
+            Wisdom is not recommended during pregnancy. Women and teenage girls
+            both experienced health challenges with the continual use of herbs.
+            Please consult with your doctor or health care professional before
+            taking Wisdom.
+          </p>
+        </div>
+        <h3>Can I use Wisdom Formula with my other supplements?</h3>
+        <div class="faq-item">
+          <p>
+            Yes, you can use Wisdom Formula with other supplements. The plants
+            in Wisdom Formula are 100% safe and gentle and work with your body’s
+            natural processes. If there are any concerns, please consult your
+            doctor or health care professional before taking Wisdom.
+          </p>
+        </div>
+        <h3>Will I get subscription charges every month?</h3>
+        <div class="faq-item">
+          <p>
+            No, Integrity is at the heart of our higher values and our
+            relationship with our customers is very important. We will only
+            charge your credit card monthly if you have a 1-time payment model
+            subscription. Your credit card will never be charged automatically.
+          </p>
+        </div>
+        <h3>Are there any dietary restrictions I should follow?</h3>
+        <div class="faq-item">
+          <p>
+            There are no dietary restrictions to avoid with Wisdom Formula,
+            although you may find that reducing your consumption of gluten,
+            dairy, and sugar will help improve your health and your results with
+            Wisdom.
+          </p>
+        </div>
+        <h3>
+          Does Wisdom Formula contain Gluten, Dairy, Soy, Sugar, Corn or GMOs?
+        </h3>
+        <div class="faq-item">
+          <p>
+            No, Wisdom does NOT contain any major allergens like gluten, dairy,
+            corn, or nuts. It is also sugar-free, non-GMO, and vegan.
+          </p>
+        </div>
+        <h3>Is Wisdom fully organic?</h3>
+        <div class="faq-item">
+          <p>
+            Yes, everything in Wisdom is fully organic, but we also go beyond
+            that. When we source herbs, we look at the herb’s spiritual,
+            energetic, and “biblical” significance. We not only verify all of
+            our herbs are fully organic, we also test every single herb to make
+            sure it is as potent as it can be to maximize your results. By going
+            beyond just organic, we ensure that you are getting the most
+            powerful herbs available in the world, and that you are getting what
+            we say you are getting.
+          </p>
+        </div>
+        <h3>Can I buy Wisdom in stores?</h3>
+        <div class="faq-item">
+          <p>
+            No, this is the only place you can buy Wisdom Formula. In order to
+            ensure the highest standard of quality AND keep prices low, we
+            decided to not go with retail and make sure our customers are
+            getting the best deal possible.
+          </p>
+        </div>
+        <h3>
+          How many bottles should I order? Do I really need more than one?
+        </h3>
+        <div class="faq-item">
+          <p>
+            We highly recommend the 6-bottle package. This is the best value AND
+            it helps you get the most from your investment in Wisdom. We offer
+            the multi-bottle discounts for two reasons: 1. Because we believe in
+            the product and want you to get the best possible results. 2. By
+            offering this package, it ensures you’ll get the best results
+            possible because you’ll have a full 6 months of Wisdom to really
+            experience the benefits. When you purchase multiple bottles of
+            Wisdom, you not only save the most money, but you are also covered
+            by our Good Faith guarantee. This is why many of our customers have
+            ordered Wisdom Formula in larger quantities, as experienced the
+            highest level of satisfaction. Not only will you see the most
+            benefits by using Wisdom, but you are also fully protected by the
+            180-day no-questions-asked, money-back Good Faith guarantee.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-footer">
+      <div class="container text-center">
+        <p>...more great footage...</p>
+        <p>
+          This content has not been evaluated by the Food and Drug
+          Administration. This product is not intended to diagnose, treat, cure,
+          or prevent any disease. The information provided on this site is for
+          educational purposes only and is not intended as a substitute for
+          advice from your physician or other health care professional or any
+          information contained on or in any product label or packaging. You
+          should not use the information on this site for diagnosis or treatment
+          of any health problem or for prescription of any medication or other
+          treatment. You should consult with a healthcare professional before
+          starting any diet, exercise or supplementation program, before taking
+          any medication, or if you have or suspect you might have a health
+          problem.
+        </p>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

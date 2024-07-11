@@ -1,0 +1,1531 @@
+/* test Styles */
+.tb1 {
+  border: 1px solid red;
+}
+
+.tb2 {
+  border: 2px solid red;
+}
+
+.tb3 {
+  border: 3px solid red;
+}
+.tb4 {
+  border: 4px solid red;
+}
+/* end ============ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.hero-inner h1 {
+  font-size: 4rem !important;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+}
+
+.hero-inner h2 {
+  font-size: 2rem !important;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.hero-inner h3 {
+  font-size: 1.75rem !important;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.hero-inner h4 {
+  font-size: 1.45rem !important;
+  font-weight: 200 !important;
+}
+
+.max-4xl {
+  max-width: 56rem;
+}
+.max-5xl {
+  max-width: 64rem;
+}
+.max-6xl {
+  max-width: 72rem;
+}
+.max-7xl {
+  max-width: 80rem;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.text-dark {
+  color: #212529 !important;
+}
+.hero-inner {
+  max-width: 700px;
+  margin: auto;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-gray-cross {
+  background-image: url('https://trywisdomnutrition.com/assets/images/backgroundTwo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-intro {
+  background-color: #f4f3e9;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.section-intro .text-container,
+.section-intro .text-content {
+  position: relative;
+}
+
+.section-intro .text-content {
+  z-index: 2;
+}
+
+.section-intro .text-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.section-intro .text-content p.highlight {
+  font-size: 1.2rem;
+  color: #665039;
+  font-weight: bold;
+}
+
+.section-intro .img-fluid.float-right {
+  float: right;
+  width: 100%;
+  max-width: 319px;
+}
+
+.section-intro .bottom-right {
+  width: 53%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.section-highlight {
+  background-color: #6c4e1d;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.section-highlight h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.section-highlight p {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  margin-bottom: 1rem;
+}
+
+.section-bible-quote {
+  background-color: #faf9ef;
+  padding: 3rem 0;
+}
+
+.section-bible-quote h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.section-decoding {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.section-decoding h2 {
+  text-align: center;
+  color: #674f38;
+}
+
+.section-decoding .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-decoding .text-content {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.section-decoding .image-container {
+  display: flex;
+  justify-content: end;
+}
+
+.section-decoding .highlight {
+  font-weight: bold;
+}
+
+.section-sacred-plants {
+  background-color: #faf9ef;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-sacred-plants .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-sacred-plants .plant-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-sacred-plants .plant-item {
+  max-width: 100%;
+  margin-bottom: 40px;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.plant-item .plant-item-header {
+  display: flex;
+  column-gap: 10px;
+  align-items: baseline;
+  color: #614832;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.plant-item .plant-item-header div:nth-child(1) {
+  height: fit-content;
+  line-height: 1;
+}
+
+.plant-item .plant-item-header h3 {
+  height: 100%;
+  font-size: 1.25rem;
+  color: brown;
+  font-weight: bold;
+  text-align: left;
+  max-width: 300px;
+  width: 100%;
+}
+
+.section-sacred-plants .plant-item .text-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.section-sacred-plants .plant-item .text-content {
+  flex: 1;
+}
+
+.section-sacred-plants .plant-item p {
+  font-size: 1rem;
+  color: #666;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.section-sacred-plants .img-container {
+  flex: 0 0 200px;
+  height: auto;
+  overflow: hidden;
+}
+
+.section-sacred-plants .img-container img,
+.section-herbs .img-container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-remedies-headline {
+  background-color: #6d4b33;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.section-remedies {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.section-remedies .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-remedies p {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.section-remedies .sub-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-remedies .remedy-item {
+  margin-bottom: 20px;
+  display: flex;
+  column-gap: 10px;
+  align-items: start;
+  flex-direction: row;
+  text-align: left;
+}
+
+.section-remedies .remedy-item img {
+  margin-right: 20px;
+  max-width: 88px;
+}
+
+.section-remedies .remedy-item h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #694f38;
+}
+
+.section-remedies .remedy-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.section-remedies hr {
+  border: 0;
+  border-top: 1px solid #d3a87b;
+  margin: 20px 0;
+}
+
+.section-herbs {
+  background-color: #f9f9ef;
+  padding: 40px 0;
+}
+
+.section-herbs .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-herbs h2,
+.section-herbs h3,
+.section-herbs h4 {
+  color: #6d4b33;
+}
+
+.section-herbs p {
+  margin-bottom: 15px;
+}
+
+.section-herbs .herb-box {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  height: 333px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.section-herbs .herb-item {
+  display: flex;
+  column-gap: 110px;
+}
+
+.section-herbs .herb-item h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-herbs .img-container {
+  max-width: 150px;
+  height: 333px;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  justify-content: center;
+  position: relative;
+}
+
+.section-herbs .img-container > .img-bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+  border-radius: 100%;
+  right: -100px;
+}
+
+.section-herbs .img-bubble-inner-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.section-herbs .img-bubble-inner-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.15);
+}
+
+.number-bubble-lg {
+  top: -2px;
+  right: -5px;
+  position: absolute;
+  z-index: 30;
+  background-color: #624831;
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+
+.number-bubble-sm {
+  display: none;
+}
+
+.section-herbs .img-container > img {
+  opacity: 0.8;
+}
+
+.section-herbs .col-md-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 21px;
+}
+
+.section-herbs .row {
+  margin-left: -20px;
+}
+
+.section-subtext {
+  font-style: italic;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section-herbs-overview {
+  background-color: #f9f9ef;
+  padding: 40px 0;
+}
+
+.section-herbs-overview .container {
+  display: flex;
+  justify-content: center;
+}
+
+.section-herbs-overview {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sm-herb-overview-item {
+  display: flex;
+  align-items: start;
+  border-bottom: 2px dashed #ddd;
+  padding: 10px 2px;
+  column-gap: 10px;
+  margin: 4px 0;
+}
+.sm-herb-overview-item:last-child {
+  border: none;
+}
+
+.sm-herb-overview-item div {
+  padding-top: 10px;
+}
+
+.sm-herb-overview-item h3 {
+  font-weight: 600;
+}
+
+.sm-herb-overview-item p {
+}
+
+.sm-herb-overview-item img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.section-herbs-overview .herb-overview-item {
+  margin-bottom: 20px;
+}
+
+.section-herbs-overview h4 {
+  color: #6d4b33;
+  margin-bottom: 10px;
+}
+
+.section-herbs-overview p {
+  color: #333;
+  margin-bottom: 0;
+}
+
+.herb-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.herb-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 5px;
+  object-fit: cover;
+}
+
+.section-science-spirituality,
+.section-health-spiritual-experience,
+.section-ancient-modern-science {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.section-science-spirituality h2,
+.section-health-spiritual-experience h2,
+.section-ancient-modern-science h2 {
+  color: #6d4b33;
+}
+
+.section-science-spirituality h3,
+.section-health-spiritual-experience h3,
+.section-ancient-modern-science h3 {
+  color: #333;
+}
+
+.section-health-spiritual-experience {
+  background-color: #faf9ef;
+  color: #4b3621;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-health-spiritual-experience .lead {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6d4b33;
+}
+
+.section-health-spiritual-experience p,
+.section-test-ingredients p,
+.section-slow-process p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.section-health-spiritual-experience .card {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.section-health-spiritual-experience .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6d4b33;
+}
+
+.section-health-spiritual-experience .card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.section-health-spiritual-experience .card-img-left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 150px;
+  height: auto;
+}
+
+.bg-image-container {
+  position: absolute;
+  top: 77px;
+  right: 0;
+  height: 37%;
+  width: 33%;
+  overflow: hidden;
+}
+
+.bg-image-container .bg-image {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.section-ancient-modern-science {
+  background-color: #f9f8f4;
+  color: #4b3621;
+}
+
+.section-ancient-modern-science h2,
+.section-extraction-process h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-ancient-modern-science h3,
+.section-extraction-process h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.section-ancient-modern-science h4 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.section-ancient-modern-science em {
+  font-style: italic;
+  color: #6d4b33;
+}
+
+.section-ancient-modern-science img,
+.section-test-ingredients img,
+.section-extraction-process img,
+.section-benefits img,
+.section-slow-process img,
+.section-get-hands-on .img-fluid,
+.section-supplements img {
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.custom-blockquote {
+  background-image: url('https://trywisdomnutrition.com/assets/images/scroll.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  min-height: 333px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 49px;
+  box-sizing: border-box;
+  width: 75%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.custom-blockquote p {
+  max-width: 600px;
+}
+
+.section-ingredient-testing,
+.section-herbal-companies,
+.section-extraction-process {
+  padding: 60px 0;
+}
+
+.section-ingredient-testing p,
+.section-herbal-companies p,
+.section-extraction-process p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.process-box {
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.process-item {
+  background-image: url('https://trywisdomnutrition.com/assets/images/39.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.process-item .checkmark {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.process-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  padding: 15px;
+}
+
+.process-item .highlight {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.section-quantum-technologies {
+  background-color: #fffce8;
+  padding: 60px 0;
+}
+
+.section-quantum-technologies h2 {
+  color: #6d4b33;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section-quantum-technologies .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quantum-item {
+  background-color: #6d4b33;
+  color: #fff;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.quantum-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.quantum-item p {
+  font-size: 1rem;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-handcrafted {
+  background-color: #f8f5f1;
+  padding: 60px 0;
+}
+
+.section-handcrafted h2,
+.section-powerful h2,
+.section-gift h2,
+.section-limited-supplies h2,
+.section-get-hands-on h2,
+.section-pricing h2,
+.section-pricing-bottom .pricing-box h4,
+.section-money-back-guarantee h2,
+.section-customer-support h2,
+.section-supplements h2 {
+  color: #6d4b33;
+  margin-bottom: 40px;
+}
+
+.section-handcrafted p,
+.section-higher-plane p,
+.section-ways-to-use p,
+.section-gift p,
+.section-limited-supplies p,
+.section-get-hands-on p,
+.section-pricing p,
+.section-pricing-bottom .pricing-box p,
+.section-money-back-guarantee p,
+.section-customer-support p,
+.section-supplements p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section-handcrafted .out-of-stock {
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section-handcrafted .out-of-stock h3 {
+  color: #b31f11;
+  margin-bottom: 20px;
+}
+
+.section-higher-plane {
+  padding: 60px 0;
+}
+
+.section-higher-plane h2 {
+  color: #6d4b33;
+  margin-bottom: 40px;
+}
+
+.section-ways-to-use {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.section-ways-to-use h2 {
+  color: #6d4b33;
+  margin-bottom: 30px;
+}
+
+.section-ways-to-use .way-to-use-box {
+  background-color: #fffbe6;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 175px;
+  display: flex;
+  align-items: center;
+}
+
+.section-ways-to-use .way-to-use-box .col-md-4,
+.section-ways-to-use .way-to-use-box .col-md-8 {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.section-ways-to-use .way-to-use-box img {
+  width: 100%;
+  display: block;
+}
+
+.section-ways-to-use .way-to-use-text {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-ways-to-use h3 {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col-md-4,
+.no-gutters > .col-md-8 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.section-benefits {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.section-benefits .container {
+  max-width: 900px;
+}
+
+.section-slow-process {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.section-slow-process h2 {
+  color: #6d4b33;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-package {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.section-package h2 {
+  color: #6d4b33;
+  margin-bottom: 30px;
+}
+
+.package-box {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: stretch;
+}
+
+.package-content {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.package-content .best-value-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: auto;
+}
+
+.package-content h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.package-content .price {
+  color: #e74c3c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.package-content .total,
+.package-content .shipping,
+.package-content .guarantee,
+.package-content .payment-options {
+  color: #333;
+}
+
+.package-content .btn {
+  background-color: #f39c12;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.package-content .btn:hover {
+  background-color: #e67e22;
+}
+
+.section-money-back-guarantee {
+  padding: 60px 0;
+  min-height: 645px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guarantee-container {
+  background-image: url('https://trywisdomnutrition.com/assets/images/51.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 60px 0;
+  min-height: 645px;
+}
+
+.guarantee-text {
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 733px;
+  margin: 86px auto 0px auto;
+}
+
+.guarantee-text h2,
+.guarantee-text h3 {
+  color: #6d4b33;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-customer-support {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.section-supplements {
+  background-color: #faf9ef;
+  padding: 60px 0;
+}
+
+.section-supplements h4 {
+  font-size: 1.5rem;
+}
+
+.section-herbal-companies p strong,
+.section-herbal-companies p em {
+  color: #333;
+}
+
+.section-herbal-companies .img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-out-of-stock {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.section-out-of-stock .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-out-of-stock h2 {
+  color: #6d4b33;
+  font-size: 1.5rem;
+}
+
+.section-out-of-stock p {
+  color: #333;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.section-out-of-stock .quote-box {
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  text-align: center;
+  color: #6d4b33;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-image: url('https://trywisdomnutrition.com/assets/images/37.png');
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.section-out-of-stock .quote-box em {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #6d4b33;
+}
+
+.section-faq {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.section-faq .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-faq .faq-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-faq .faq-item h3 {
+  margin-bottom: 10px;
+}
+
+.section-footer {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.section-footer .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-footer p {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.buy-now-button {
+  background: linear-gradient(to bottom, #f6a32f, #f8cd43);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 23px;
+}
+
+.buy-now-button:hover {
+  background: linear-gradient(to bottom, #f8cd43, #f6a32f);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section-headline {
+  background-color: #694f38;
+  padding: 20px 0;
+}
+
+.section-headline h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 2.75rem;
+  font-family: 'Times New Roman', Times, serif;
+  max-width: 850px;
+  margin: auto;
+}
+
+.section-content {
+  background-color: #f4f3e9;
+  padding: 40px 0;
+}
+
+.section-content .text-content {
+  /* padding: 20px; */
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.section-content .text-content p {
+  margin-bottom: 1rem;
+}
+
+.section-content .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-anointing-oil {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.section-anointing-oil p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.section-anointing-oil p strong {
+  font-weight: bold;
+}
+
+.section-anointing-oil p em {
+  font-style: italic;
+}
+
+.section-anointing-oil .row {
+  align-items: center;
+}
+
+.section-anointing-oil img {
+  display: block;
+  margin: 0 auto;
+}
+
+.section-test-ingredients {
+  background-color: #faf9ef;
+  padding: 60px 0;
+  color: #4b3621;
+}
+
+.section-test-ingredients h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6d4b33;
+  margin-bottom: 10px;
+}
+
+.section-test-ingredients h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6d4b33;
+  margin-bottom: 30px;
+}
+
+.section-test-ingredients .text-center p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+div#cbBadge {
+  z-index: 2;
+}
+
+.footer-cb {
+  font-size: 9pt !important;
+  text-align: center;
+  outline: 0 !important;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin-bottom: 60px;
+}
+
+.footer-cb p {
+  color: #999 !important;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.font-lg {
+  font-size: 1.25rem;
+}
+.brown-bold {
+  color: #665039;
+  font-weight: 700;
+}
+.brown-text {
+  color: #614832;
+}
+.brown {
+  color: #694f38;
+}
+.brown-lt {
+  color: #e4cc9e;
+}
+
+.brown-lt-2 {
+  color: #a6a392;
+}
+.quote .brown {
+  font-size: 1rem;
+}
+.quote h2 {
+  max-width: 640px;
+  margin: auto;
+}
+
+small {
+  font-size: 0.75rem;
+}
+#hero {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.ft {
+  font-size: 1rem;
+}
+.ft p {
+  max-width: 88%;
+}
+#hero::after {
+  content: '';
+  width: 42px;
+  height: 83px;
+  background-image: url(/assets/images/symbol.png);
+  background-repeat: none;
+  position: absolute;
+  bottom: -58px;
+  left: calc(50% - 21px);
+}
+
+@media (max-width: 767px) {
+  .custom-blockquote {
+    width: 96%;
+    margin: 0 auto;
+  }
+  .hero-inner h1 {
+    font-size: 3rem !important;
+  }
+
+  .hero-inner h2 {
+    font-size: 1.55rem !important;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-inner h3 {
+    font-size: 1.25rem !important;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .hero-inner h4 {
+    font-size: 1.25rem !important;
+    font-weight: 200 !important;
+  }
+  .section-headline h2 {
+    font-size: 2rem;
+  }
+  .ft {
+    font-size: 0.75rem;
+  }
+}
+
+.lg-hidden {
+  display: none;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.sm-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  .bg-gray-cross {
+    background-image: url('/assets/images/gray-cross-mobile.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .lg-hidden {
+    display: block;
+  }
+  .sm-hidden {
+    display: none;
+  }
+  .text-image {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .custom-blockquote {
+    background-image: url('/assets/images/quote-box-1-mobile.png');
+    width: 100%;
+  }
+
+  .custom-blockquote > p {
+    max-width: 260px;
+    font-size: 1rem;
+  }
+
+  .hero-inner h1 {
+    font-size: 2.12rem !important;
+  }
+
+  .hero-inner h2 {
+    font-size: 1.125rem !important;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-inner h3 {
+    font-size: 1rem !important;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-inner h4 {
+    font-size: 1rem !important;
+    font-weight: 200 !important;
+  }
+
+  .section-decoding .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-sacred-plants {
+    padding: 0 15px;
+  }
+
+  .section-remedies .remedy-item {
+    column-gap: 0px;
+  }
+
+  .section-remedies .remedy-item img {
+    margin-right: 20px;
+    max-width: 54px;
+    max-height: 54px;
+  }
+
+  .section-herbs p {
+    margin-bottom: 15px;
+  }
+  .section-herbs .herb-item {
+    display: flex;
+    flex-direction: column;
+    column-gap: 110px;
+  }
+
+  .section-herbs .herb-box {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .section-herbs .img-container {
+    max-width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .section-herbs .img-container > .img-bubble {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+    border-radius: 100%;
+    right: calc(50% - 100px);
+    bottom: -100px;
+  }
+
+  .section-herbs .img-bubble-inner-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    border: 3px solid #fff;
+  }
+
+  .section-herbs .img-bubble-inner-wrapper > img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.162);
+  }
+
+  .number-bubble-lg {
+    display: none;
+  }
+
+  .number-bubble-sm {
+    z-index: 30;
+    text-align: center;
+    background-color: #624831;
+    color: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    transform: translate(0, -20px);
+  }
+
+  .section-herbs .img-container > img {
+    opacity: 0.8;
+  }
+
+  .quote-text-sm {
+    max-width: calc(100vw - 100px);
+  }
+
+  .sm-center {
+    display: flex;
+    justify-content: center;
+  }
+}
